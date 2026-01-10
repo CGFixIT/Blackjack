@@ -21,7 +21,7 @@ using namespace std;
 // Function Prototypes
 void viewDeck(int deck[]);
 void initDeck(int deck[]);
-void shuffle(int deck[], int size);
+void shuffleDeck(int deck[], int size);
 void loadAccounts(class User(&data)[100], int&);
 void showRules();
 string gameMode(int&);
@@ -894,7 +894,7 @@ void playFirstHand(int players, int &level, double(&winnings)[7], double(&bets)[
 		//Declare, initialize and shuffle the deck.
 		int deck[52];
 		initDeck(deck);
-		shuffle(deck, 51);
+		shuffleDeck(deck, 51);
 
 		// Declare and initialize Player and Dealer hands
 		int p1Hand[10] = { 0 };
@@ -4321,3 +4321,4 @@ void displayResults(class User(&accounts)[100], int numUsers)
 	system("pause");
 
 }
+
