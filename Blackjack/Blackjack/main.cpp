@@ -2,7 +2,7 @@
 //*******************************
 // Chris Grady                  *
 // Casino Blackjack             *
-// CIST 2361 Final Project      *
+// Final Project                *
 // Spring 2016                  *
 //*******************************
 //*******************************
@@ -4322,5 +4322,6 @@ void displayResults(class User(&accounts)[100], int numUsers)
 	system("pause");
 
 }
+
 
 
