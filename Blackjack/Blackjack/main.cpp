@@ -1698,7 +1698,7 @@ void initDeck(int deck[])
 /* ==================================================
 Name: shuffle
 Description: Randomly rearranges deck of cards
-================================================== */
+================================================== 
 void shuffle(int deck[], int size)
 {
 	// Declaring local variables
@@ -1710,6 +1710,14 @@ void shuffle(int deck[], int size)
 
 	random_shuffle(deck, deck + 51);
 }
+*/
+void shuffleDeck(int deck[], int size)
+{
+    random_device rd;
+    mt19937 g(rd());
+    std::shuffle(deck, deck + size, g);  // Explicit std:: for clarity
+}
+
 
 /* ==================================================
 Name: showCard
@@ -4311,4 +4319,5 @@ void displayResults(class User(&accounts)[100], int numUsers)
 	}
 	cout << "(All Players start with $50)\n\n";
 	system("pause");
+
 }
