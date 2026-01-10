@@ -16,6 +16,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <limits>
+#include <random>
 using namespace std;
 
 // Function Prototypes
@@ -4321,4 +4322,5 @@ void displayResults(class User(&accounts)[100], int numUsers)
 	system("pause");
 
 }
+
 
