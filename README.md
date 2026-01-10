@@ -6,7 +6,7 @@
 -Basic dealer AI (very basic lol but met criteria for project) / Level of difficulty <bR>
 -Lots of other stuff that I will add<bR>
 <hr>-->
-### Casino Blackjack (C++)
+### Casino Blackjack aka 21 (C++)
 
 Fun old-school CMD console Blackjack game written in C++ as a school projects from many moons ago..
 
