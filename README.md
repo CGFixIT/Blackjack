@@ -122,4 +122,5 @@ void shuffle(int deck[], int size) {
     int xRan = rand() % 50 + 5;
     random_shuffle(deck, deck + 51);
 }
+^no it doesnt lol fix with snippet from uncommented lines below soon
 
