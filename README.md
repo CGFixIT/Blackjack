@@ -115,7 +115,7 @@ The repo is intentionally small:
 ### V2 Updates / Shuffling
 
 The version in this repo uses:
-<!--
+<standby>
 ```cpp
 void shuffle(int deck[], int size) {
     srand(time(0));
