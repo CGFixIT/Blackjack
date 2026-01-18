@@ -115,7 +115,7 @@ The repo is intentionally small:
 ### V2 Updates / Shuffling
 
 The version in this repo uses:
-
+<!--
 ```cpp
 void shuffle(int deck[], int size) {
     srand(time(0));
@@ -123,4 +123,4 @@ void shuffle(int deck[], int size) {
     random_shuffle(deck, deck + 51);
 }
 ^no it doesnt lol fix with snippet from uncommented lines below soon
-
+/>
