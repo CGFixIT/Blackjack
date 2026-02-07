@@ -1699,19 +1699,7 @@ void initDeck(int deck[])
 /* ==================================================
 Name: shuffle
 Description: Randomly rearranges deck of cards
-================================================== 
-void shuffle(int deck[], int size)
-{
-	// Declaring local variables
-	int xRan;
-	// Using time for truly random number
-	srand(time(0));
-	// Randomizing number determining how many times deck is shuffled
-	xRan = rand() % 50 + 5;
-
-	random_shuffle(deck, deck + 51);
-}
-*/
+================================================== */
 void shuffleDeck(int deck[], int size)
 {
     random_device rd;
@@ -4322,6 +4310,7 @@ void displayResults(class User(&accounts)[100], int numUsers)
 	system("pause");
 
 }
+
 
 
 
