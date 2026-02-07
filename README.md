@@ -6,17 +6,24 @@
 -Basic dealer AI (very basic lol but met criteria for project) / Level of difficulty <bR>
 -Lots of other stuff that I will add<bR>
 <hr>-->
-### Casino Blackjack aka 21 (C++)
-
-Fun old-school CMD console Blackjack game written in C++ as a school projects from many moons ago..
+### Casino Blackjack aka Twenty-one (Written in C++; I used Visual Studio but <a href="https://www.geeksforgeeks.org/blogs/best-ides-for-c-c-plus-plus-developers/">many</a> compilers are supported
 
 ---
 
-Single-player or multiplayer (up to 7 players), persistent accounts, basic dealer “AI”, and a simple leaderboard driven by a flat-file “database”.
 
+---
+
+Fun old-school CMD console Blackjack game written in C++ as a school projects from many moons ago..
 > This is a **legacy / educational** project – not production-grade casino software. It’s here as a snapshot of where my C++ journey started.
 
 ---
+
+#This is Blackjack, written in C++. Includes:<bR>
+-User accounts (Includes tally of winnings and player rankings)<bR>
+-Leaderboard<bR>
+-Basic dealer AI (very basic lol but met criteria for project) / Level of difficulty <bR>
+-Lots of other stuff that I will add
+
 
 <a href="https://github.com/lostSail0r/Blackjack/blob/master/Blackjack/Blackjack/main.cpp">Main Code:</a>
 
@@ -40,7 +47,7 @@ Single-player or multiplayer (up to 7 players), persistent accounts, basic deale
   - Accounts stored in `userDB.txt` between runs
 - **Dealer difficulty levels**
   - **Beginner** – dealer stands on soft 17
-  - **Expert** – dealer hits on soft 17 and uses basic Ace-adjustment logic
+  - **Expert** – dealer hits on soft 17 (When the dealer hits on soft 17, it gives them a chance to improve their hand but it also adds risk of busting; aka Expert can improve on soft 17; Beginner plays it safe)
 - **Leaderboard**
   - Players ranked by total lifetime earnings
   - Custom selection sort over the `User` array
@@ -114,13 +121,15 @@ The repo is intentionally small:
 
 ### V2 Updates / Shuffling
 
-The version in this repo uses:
+The latest version in this repo uses <a href="https://cplusplus.com/reference/random/mt19937/#google_vignette">Mersenne Twister 19937 generator (mt19937 algo)</a><br>Previously I used the system time thinking that was random... which it is if you wait hours in between each round lolz. The demo video I made years ago where somehow me and the dealer got face cards twice in a row (and the odds of that happening) bothered me even though the teacher gave me an A since he prob didn't read the code just saw it worked - Anywho; not that it matters now unless I wanna start writing massive apps that need C++ but I felt like I should archive this if I didn't at least fix that part. That's my story ;) - Anyways enjoy :
 <standby>
 ```cpp
-void shuffle(int deck[], int size) {
-    srand(time(0));
-    int xRan = rand() % 50 + 5;
-    random_shuffle(deck, deck + 51);
+void shuffleDeck(int deck[], int size)
+{
+    random_device rd;
+    mt19937 g(rd());
+    std::shuffle(deck, deck + size, g);  // Explicit std:: for clarity
 }
-^no it doesnt lol fix with snippet from uncommented lines below soon
 />
+
+
