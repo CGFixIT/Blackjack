@@ -895,7 +895,7 @@ void playFirstHand(int players, int &level, double(&winnings)[7], double(&bets)[
 		//Declare, initialize and shuffle the deck.
 		int deck[52];
 		initDeck(deck);
-		shuffleDeck(deck, 51);
+		shuffleDeck(deck, 52);
 
 		// Declare and initialize Player and Dealer hands
 		int p1Hand[10] = { 0 };
