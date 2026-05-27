@@ -1858,7 +1858,7 @@ int getTopCard(int deck[])
 	int topCard = 0;
 
 	//Loop through the deck
-	for (int i = 0; i < 51; i++)
+	for (int i = 0; i < 52; i++)
 	{
 		//Find a card that isn't empty
 		if (deck[i] != 0)
