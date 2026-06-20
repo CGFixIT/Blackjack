@@ -1,0 +1,46 @@
+# ============================================================
+# BlackJack (C++ / Visual Studio) — .gitignore
+# ============================================================
+
+# User data files — runtime-generated, may contain PII
+# userDB.txt holds player names/balances
+Blackjack/Blackjack/userDB.txt
+userDB.txt
+users.txt
+*userDB*.txt
+*users*.txt
+
+# Visual Studio IDE artifacts
+.vs/
+*.user
+*.suo
+*.sdf          # Blackjack.sdf is 12 MB — pure VS IntelliSense cache
+*.opensdf
+*.VC.db
+*.vcxproj.user
+
+# Build output directories
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+# Compiled binaries and object files
+*.exe
+*.dll
+*.lib
+*.obj
+*.pdb
+*.ilk
+*.pch
+*.o
+
+# Windows / OS
+Thumbs.db
+.DS_Store
+*.lnk
+
+# Editor
+.idea/
+.vscode/
+*.swp
