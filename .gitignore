@@ -4,6 +4,7 @@
 
 # User data files — runtime-generated, may contain PII
 # userDB.txt holds player names/balances
+*.txt
 Blackjack/Blackjack/userDB.txt
 userDB.txt
 users.txt
@@ -21,6 +22,7 @@ users.txt
 
 # Build output directories
 [Dd]ebug/
+Debug/
 [Rr]elease/
 x64/
 x86/
